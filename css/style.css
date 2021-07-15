@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: rgba(254, 254, 254, 1);
+  box-shadow: 4px 0 8px 8px rgba(4, 4, 4, 0.8);
+  width: 100vw;
+  height: 15vh;
+}
+.bodyback {
+  width: 100vw;
+  height: 95vh;
+}
+.color-div {
+  display: inline-flex;
+  position: absolute;
+  float: right;
+  top: 15px;
+  right: 35px;
+  text-align: center;
+}
+
+input {
+  border: 1px;
+  width: 2rem;
+}
+
+.title {
+  text-align: left;
+}
+a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+p {
+  text-align: justify;
+  font-family: "Lato";
+  font-weight: bold;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+h2 {
+  font-size: 1.6rem;
+  padding: 16px 5px 0 2rem;
+}
+.cardtext {
+  z-index: 1111;
+  box-sizing: border-box;
+  padding: 6px;
+  position: relative;
+  top: 125px;
+  left: 45px;
+  display: flex;
+  width: 35%;
+  height: 65vh;
+  overflow: hidden;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px 8px rgba(4, 4, 4, 0.8);
+}
+h1 {
+  color: rgba(254, 254, 254, 1);
+  text-shadow: 1px 0 #000, 0 1px #000, -1px 0 #000, 0 -1px #000;
+}
+
+.footer {
+  z-index: 2222;
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 7%;
+  color: #1e1e1e;
+  background-color: #ffffff;
+  box-shadow: 4px 0 8px 8px rgba(4, 4, 4, 0.8);
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 0.8rem;
+  }
+
+  .color-div {
+    left: 31px;
+  }
+  h2 {
+    font-size: 1.4rem;
+    padding-top: 2rem;
+    margin: auto;
+  }
+  .cardtext {
+    width: 65vw;
+    height: 65vh;
+  }
+}
