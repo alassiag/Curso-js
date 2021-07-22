@@ -1,43 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColorPicker</title>
+    <link rel="stylesheet" href="../../colorpicker/css/normalize.css" />
+    <link rel="stylesheet" href="../../colorpicker/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../../colorpicker/assets/json.svg"
+      type="image/x-icon"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <section class="header" id="header">
+      <h2 class="title">Pick your theme color conbination</h2>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <div class="salida" id="salida"></div>
+      <div class="color-div">
+        <p>Body Background</p>
+        <input type="color" id="color" value="#ffffff" />
+        <p>Card Background</p>
+        <input type="color" id="card" value="#ffffff" />
+        <p>Card Text</p>
+        <input type="color" id="text" value="#000000" />
+      </div>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <section class="bodyback" id="bodyback">
+      <div class="cardtext" id="cardtext">
+        <div>
+          <h1>Card Title</h1>
+          <p>
+            ColorPick needs permission on all websites so that it is at the
+            ready when you need it. In order to use the tabs API this permission
+            is required. Color pick does not abuse this permission and is highly
+            configurable. You can always review the source code yourself, which
+            is available online here https://github.com/qufighter/ColorPick PRs
+            welcome! Please note that colors are picked from a snapshot of the
+            page that is updated only when you scroll. To take a new snapshot
+            press r or use the re-snap button. Sometimes if you just changed
+            tabs, you may see a snapshot error - this is an intentional security
+            feature. Press R or scroll to correct this, or exit color pick and
+            try again.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="footer" id="footer">
+      <div class="footer-content">
+        <p class="text-card">
+          Copyright - 2021 -
+          <a href="https://alassiag-react-pin.herokuapp.com/" target="_blank">
+            Force The Change</a
+          >
+        </p>
+      </div>
+    </div>
+    <script src="../src/js/color.js"></script>
   </body>
 </html>
